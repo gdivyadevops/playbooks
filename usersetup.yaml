@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+
+     - name: create user
+       user:
+
+          name: batchuser
+          uid: 2213
+          comment: for testing
